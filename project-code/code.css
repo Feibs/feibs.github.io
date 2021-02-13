@@ -3,8 +3,7 @@ html{
 }
 
 body{
-    background: linear-gradient(0deg,white, #fff1ee);
-    margin:0px;
+    margin:0;
     font-family: Montserrat, sans-serif;
     font-size:20px;
     color:white;
@@ -31,6 +30,10 @@ header{
     color:#74BDCB;
 }
 
+#code{
+    background: linear-gradient(0deg,white, #fff1ee);
+}
+
 #code-skill{
     display:flex;
     flex-wrap: wrap;
@@ -52,7 +55,7 @@ a:link, a:visited{
 
 .text{
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 50%; 
     transform: translateX(-50%);
     -webkit-transform: translate(-50%);
@@ -66,6 +69,7 @@ a:link, a:visited{
     top:0px;
     transition: top 1s ease;
     cursor:pointer;
+    margin-top:-30px;
 }
 
 #control1, #control2, #control3, #control4{
@@ -135,7 +139,7 @@ figcaption{
     } 
     .text{
         font-size: 17px;
-        bottom:30px;
+        bottom:50px;
     }
 }
 
@@ -174,5 +178,13 @@ figcaption{
     }
     .container:hover .project-thumbnail, .container:active .project-thumbnail{
         transform:scale(1.08);
+    }
+}
+
+@media only screen 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+    header{
+        height:50vw;
     }
 }
