@@ -3,8 +3,7 @@ html{
 }
 
 body{
-    background: linear-gradient(0deg,white, #fff1ee);
-    margin:0px;
+    margin:0;
     font-family: Montserrat, sans-serif;
     color:rgb(104, 129, 151);
     text-align: center;
@@ -16,7 +15,7 @@ header{
     justify-content:center;
     background: linear-gradient(0deg, #fff1ee,#e7f3ed,#ace0f9, #C5D6EC);
     height:100vh;
-    font-size:35px;
+    font-size:40px;
 }
 
 #moment{
@@ -30,27 +29,28 @@ header{
     color:#FFA384;
 }
 
-#row {
+#photo {
+    background: linear-gradient(0deg,white, #fff1ee);
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 4px 0px 4px;
+    padding: 0 70px;
 }
 
-/* Create 3 equal columns that sits next to each other */
+/* Create 2 equal columns that sits next to each other */
 .column {
-    flex: 30%;
-    padding: 0 4px;
+    flex: 40%;
+    padding: 0 15px;
 }
 
 img {
     width: 100%;
-    margin-top: 8px;
-    border-radius: 5%;
+    border-radius: 10%;
     vertical-align: middle;
 }
 
-.container{
+.container {
     position: relative;
+    margin-bottom:25px;
 }
 
 .overlay {
@@ -85,5 +85,13 @@ img {
     }
     .text{
         font-size: 20px;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+    header{
+        height:50vw;
     }
 }
