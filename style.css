@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: #C5D6EC;
+    background: linear-gradient(-45deg, #e7f3ed,#fff1eb);
     font-family: Montserrat,sans-serif;
     margin:0;
 }
@@ -74,6 +74,7 @@ body{
 #navbar {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     overflow: hidden;
     position: sticky;
     position:-webkit-sticky; 
@@ -99,16 +100,15 @@ body{
 
 #about{
     padding: 20px 20px 0 20px;
-    background:#b3b3b3;
+    background:#b6c5da;
+    box-shadow: 0 10px 20px rgba(160, 93, 93, 0.19);
     display:flex;
     justify-content: space-evenly;
     margin-bottom:40px;
 }
 
-.profile{
-    display:flex; 
-    width:550px;
-    margin:0 auto; 
+.profile-picture{
+    border-bottom: 8px solid #636363;
 }
 
 p{
@@ -142,6 +142,7 @@ p{
     position: absolute;
     font-family: Montserrat, sans-serif;
     font-size: 20px;
+    font-style: italic;
     color: rgb(100, 100, 100);
     top: 50%;
     left: 50%; 
@@ -166,7 +167,7 @@ p{
     width:300px;
     height:300px;
     border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    box-shadow: 0 10px 20px rgba(160, 93, 93, 0.19);
 }
 
 .photo{
@@ -189,7 +190,7 @@ p{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 
-.container:hover .overlay, .container:active .overlay {
+.container:hover .overlay{
     width: 100%;
 }
 
@@ -204,7 +205,7 @@ a:link, a:visited {
     color: #000000;
     background: linear-gradient(45deg, #fff1eb, #ace0f9);
     background-size: 200%;
-    animation: bg-gradient 10s ease infinite;
+    animation: bg-gradient 4s ease infinite;
     margin-top:40px;
     padding: 30px 20px 10px 20px;
 }
@@ -269,9 +270,6 @@ a:link, a:visited {
         width:400px;
         height:auto;
     }
-    .profile{
-        width:400px;
-    }
     .profile-picture{
         width:350px;
         height:auto;
@@ -284,5 +282,43 @@ a:link, a:visited {
     .code, .drawing, .photo, .writing{
         width:200px;
         height:200px;
+    }
+}
+
+@media only screen
+  and (orientation: portrait){
+    #home{
+        height:50vw;
+    }
+    .animate1{
+        top:5vh;
+    }
+    .animate2{
+        top:12vh;
+    }
+  }
+
+@media only screen 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+    #about{
+        flex-direction: column;
+        align-items: center;
+        width:600px;
+        margin: 50px auto;
+        padding:30px;
+        border-radius:30px;
+    } 
+    #project{
+        width:750px;
+        height:680px;
+        margin: 0 auto;
+    }
+    .code, .drawing, .photo, .writing{
+        width:280px;
+        height:280px;
+    }
+    #contact{
+        margin-top:0px;
     }
 }
