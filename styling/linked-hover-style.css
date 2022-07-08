@@ -1,0 +1,80 @@
+#code-project{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-thumbnail{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+figcaption{
+    font-size: 1rem;
+    padding: 1.125rem;
+}
+
+.project-name{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.project-tech-stack{
+    font-size: 1.125rem;
+}
+
+.container:hover, .container:active {
+    padding: 1rem;
+    transition-duration: 0.5s;
+}
+
+.container:hover figcaption, .container:active figcaption {
+    color:#74BDCB;
+}
+
+.additional {
+    padding: 1.25rem;
+    width: 75%;
+    margin: 2rem auto 0 auto;
+}
+
+.course-detail{
+    width: fit-content;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.tech-detail{
+    margin: 0 auto;
+}
+
+.tech-name {
+    text-align: center;
+    margin: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-via:hover, .contact-via:active{
+    padding: 1rem;
+    transition-duration: 0.5s;
+}
+
+@media (min-width: 640px) {
+    figcaption{
+        font-size: 1.125rem;
+    }
+    .project-name{
+        font-size: 1.25rem;
+    }
+    .project-tech-stack{
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .additional{
+        width: 30%;
+    }
+}

@@ -1,0 +1,14 @@
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+}
+
+.container:hover .overlay, .container:active .overlay {
+    height: 25%;
+}
+
+@media (min-width: 1024px) {
+    .text {
+        padding: 1.5rem;
+    }
+}

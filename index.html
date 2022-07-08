@@ -3,110 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" type="text/css"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styling/default-style.css">
+    <link rel="stylesheet" type="text/css" href="styling/style.css">
     <title>FEBI | Febi Imanuela</title>
 </head>
 
 <body>
-    <img class="animate1" src="clouds1.png" width="480px" height="240px" alt=" ">
-    <img class="animate2" src="clouds2.png" width="450px" height="180px" alt=" ">
+    <img class="animate1" src="assets/clouds1.png" alt=" ">
+    <img class="animate2" src="assets/clouds2.png" alt=" ">
 
-    <div id="home">
-        <a href="#navbar">
-            <img class="home-photo" src="greets.png" width="650px" height="400px" alt="welcome to Febi's webpage!">
-        </a>
-    </div>
-
-    <div id="navbar">
-        <a href="#about">about</a>
-        <a href="#project">project</a>
-        <a href="#contact">contact</a>
-    </div>
-
-    <div id="about">
-        <img class="profile-picture" src="febi_photo.png" width="420px" height="400px" alt="Febi Imanuela">
-        <div class="profile-desc">
-            <p>birth:<br>
-                Jakarta, 2003
-            </p>
-            <p class="bio">
-                a <a href="project-writing/index.html"">writer</a> and a <a
-                    href=" project-code/index.html">CS
-                    student</a><br>
-                whose comfort is found in her companionship with lens<br>
-                -- both eyeglasses and <a href="project-photo/index.html">camera</a> -- to capture
-                minuatiae;<br>
-                here watch her doing <a href="project-drawing/index.html">doodle</a> while eating
-                noodle<br>
-                -- just kidding, at this point, these phrases are mumbo jumbo<br>
-                just so these lines make rhymes
-            </p>
-            <p>
-                education : <br>
-                Universitas Indonesia <br>
-                SMA Don Bosco II <br>
-                SMP Don Bosco II <br>
-                SD Advent VII
-            </p>
+    <header id="home">
+        <div class="greeting">
+            <div class="greeting-desc">
+                <h2>Hello there!<br>
+                Greetings from Febi :) </h2>
+                <a href="#main">
+                    <img class="scroll-down" src="assets/scroll-down.svg" alt="Scroll">
+                </a>
+            </div>
         </div>
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="main">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Project
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="ux.html" target="_blank">UI/UX</a>
+                <a class="dropdown-item" href="code.html" target="_blank">Web development / coding</a>
+                <a class="dropdown-item" href="https://ristek.link/VisualDesignFebi" target="_blank">Visual design</a>
+                <a class="dropdown-item" href="writing.html" target="_blank">Writing</a>
+                <a class="dropdown-item" href="drawing.html" target="_blank">Drawing</a>
+                <a class="dropdown-item" href="photo.html" target="_blank">Photo</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div id="about" class="content">
+        <h1>About</h1>
+        <p class="bio">+ 03 liner and lifelong learner majored in Computer Science</p>
+        <p class="bio">+ Enjoys drawing, reading, writing, web dev, and ui/ux</p>
+        <img class="img-fluid profile-picture" src="assets/profile-photo.svg" alt="Febi Imanuela">
+        <p class="bio">+ Education : <br>
+        Fasilkom, Universitas Indonesia <br>
+        Don Bosco II High School
+        </p>
     </div>
 
-    <div id="project">
-        <a href="project-writing/index.html">
+    <div id="project" class="content">
+        <h1>Project</h1>
+        <div class="projects">
+        <a href="ux.html" target="_blank">
             <div class="container">
-                <div class="writing">
+                <div class="project-type ux">
                     <div class="overlay">
-                        <div class="text">writing</div>
+                        <div class="text">ui/ux</div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="project-code/index.html">
+        <a href="code.html" target="_blank">
             <div class="container">
-                <div class="code">
+                <div class="project-type code">
                     <div class="overlay">
                         <div class="text">code</div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="project-photo/index.html">
+        <a href="https://ristek.link/VisualDesignFebi" target="_blank">
             <div class="container">
-                <div class="photo">
+                <div class="project-type visdes">
+                    <div class="overlay">
+                        <div class="text">design</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="writing.html" target="_blank">
+            <div class="container">
+                <div class="project-type writing">
+                    <div class="overlay">
+                        <div class="text">writing</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="drawing.html" target="_blank">
+            <div class="container">
+                <div class="project-type drawing">
+                    <div class="overlay">
+                        <div class="text">drawing</div>
+                    </div>
+                </div>
+            </div>
+        </a>        
+        <a href="photo.html" target="_blank">
+            <div class="container">
+                <div class="project-type photo">
                     <div class="overlay">
                         <div class="text">photo</div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="project-drawing/index.html">
-            <div class="container">
-                <div class="drawing">
-                    <div class="overlay">
-                        <div class="text">drawing</div>
-                    </div>
-                </div>
+    </div>
+    </div>
+
+    <div id="contact" class="content">
+        <h1>Contact</h1>
+        <div class="contact-info">
+            <div class="contact-via">
+                <img class="contact-icon" src="assets/contact-linkedin.svg" alt="linkedin contact">
+                <a href="https://www.linkedin.com/in/febi-imanuela" target="_blank"><span class="contact-link">linkedin.com/in/febi-imanuela</span></a>
             </div>
-        </a>
+            <div class="contact-via">
+                <img class="contact-icon" src="assets/contact-codepen.svg" alt="codepen contact">
+                <a href="https://codepen.io/Feibs" target="_blank"><span class="contact-link">codepen.io/Feibs</span></a>
+            </div>
+            <div class="contact-via">
+                <img class="contact-icon" src="assets/contact-github.svg" alt="github contact">
+                <a href="https://github.com/feibs" target="_blank"><span class="contact-link">github.com/feibs</span></a>
+            </div>
+            <div class="contact-via">
+                <img class="contact-icon" src="assets/contact-gitlab.svg" alt="gitlab contact">
+                <a href="https://gitlab.com/febiimanuela" target="_blank"><span class="contact-link">gitlab.com/febiimanuela</span></a>
+            </div>
+            <div class="contact-via">
+                <img class="contact-icon" src="assets/contact-gmail.svg" alt="gmail contact">
+                <span class="contact-link">febi.imanuela@ui.ac.id</span>
+            </div>
+        </div>
     </div>
 
-    <div id="contact">
-        <div class="gmail">
-            <img class="contact-icon" src="contact-gmail.png" alt="gmail contact" width="40px" height="40px">
-            <br>
-            <figcaption class="contact-link">febi.jakarta@gmail.com</figcaption>
-        </div>
-        <div class="ig">
-            <img class="contact-icon" src="contact-ig.png" alt="instagram contact" width="40px" height="40px">
-            <br>
-            <figcaption class="contact-link">@febijakarta</figcaption>
-        </div>
-    </div>
+    <footer class="content">
+        <p>< / > by Feibs </p>
+        <p class="sub-text">Copyright © 2020</p>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

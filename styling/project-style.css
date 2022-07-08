@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(180deg, rgba(116, 189, 203, 0.58) 0%, rgba(255, 241, 235, 0.45) 33.09%);
+}
+
+#home{
+    background-color: #add5dd;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting{
+    background: #FFF1EB;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting-desc{
+    background-color: #add5dd;
+    padding: 2rem 1rem 2rem 1rem;
+}

@@ -1,0 +1,280 @@
+body{
+    line-height: 1.75rem;
+}
+
+.content{
+    padding: 4rem 0 4rem 0;
+}
+
+#home{
+    background-color: #FFF1EB;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting{
+    background: linear-gradient(223.59deg, #CDE0FF -2.59%, #FFA384 100%);
+    background-size: 200%;
+    animation: bg-gradient 3s ease infinite;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting-desc{
+    background-color: #FFF1EB;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+@keyframes bg-gradient{
+    0%{
+        background-position:left;
+    }
+    50%{
+        background-position:right;
+    }
+    100%{
+        background-position:left;
+    }
+}
+
+.animate1{
+    width: 14rem;
+    height: 7rem;
+    position: absolute;
+    top: 15vh;
+    animation: cloud1 8s ease infinite;
+}
+
+.animate2{
+    width: 15rem;
+    height: 6rem;
+    position: absolute;
+    top: 70vh;
+    animation: cloud2 8s ease infinite;
+}
+
+@keyframes cloud1{
+    0%{
+        left:0px;
+    }
+    50%{
+        left:4rem;
+    }
+    100%{
+        left:0px;
+    }
+}
+
+@keyframes cloud2{
+    0%{
+        right:0px;
+    }
+    50%{
+        right:4rem;
+    }
+    100%{
+        right:0px;
+    }
+}
+
+.navbar {
+    background: rgba(197, 214, 236, 0.6);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.navbar-toggler{
+    margin: 0.5rem;
+}
+
+.navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+}
+
+.navbar a:hover {
+    background: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000000;
+    padding: 1rem;
+    font-size: 1.125rem;
+}
+
+.dropdown-item{
+    font-size: 1rem;
+}
+
+.dropdown-item:hover{
+    color: #74BDCB;
+}
+
+#about{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 163, 132, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bio{
+    padding: 0 2rem 0 2rem;
+    margin: 0 auto;
+}
+
+.profile-picture{
+    padding: 1.25rem 1rem 1.25rem 1rem;
+}
+
+#project{
+    background-color: #FFF1EB;
+}
+
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 1s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); 
+}
+
+.text {
+    position: absolute;
+    font-style: italic;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.project-type{
+    position: relative;
+    background-size: cover;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    margin: 1rem 0 1rem 0;
+}
+
+.ux{
+    background-image:url(../assets/thumbnail-ux.jpg);
+}
+
+.visdes{
+    background-image:url(../assets/thumbnail-visdes.jpg);
+}
+
+.code{
+    background-image:url(../assets/thumbnail-code.jpeg);
+}
+
+.drawing{
+    background-image:url(../assets/thumbnail-drawing.jpg);
+}
+
+.photo{
+    background-image:url(../assets/thumbnail-photo.jpeg);
+}
+
+.writing{
+    background-image:url(../assets/thumbnail-writing.jpg);
+}
+
+a:link, a:visited {
+    color:#000000;
+}
+
+.contact-info{
+    width: fit-content;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.contact-via{
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.contact-icon{
+    width: 1.75rem;
+}
+
+.contact-link{
+    padding-left: 1rem;
+}
+
+.contact-via:hover .contact-link{
+    text-decoration: #74BDCB underline;
+}
+
+footer{
+    background: linear-gradient(45deg, #fff1eb, #ace0f9);
+    background-size: 200%;
+    animation: bg-gradient 4s ease infinite;
+    font-weight: 500;
+}
+
+.sub-text{
+    font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+    .animate1{
+        width: 20rem;
+        height: 10rem;
+    }
+    .animate2{
+        width: 25rem;
+        height: 10rem;
+    }
+    body{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .dropdown-item{
+        font-size: 1.25rem;
+    } 
+    .project-type{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .greeting-desc{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    .project-type{
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem 0 2rem 0;
+    }
+    .overlay{
+        width: 0;
+    }
+    .container:hover .overlay{
+        width: 100%;
+    }
+}

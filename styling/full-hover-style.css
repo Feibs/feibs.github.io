@@ -1,0 +1,32 @@
+body{
+    line-height: 1.75rem;
+}
+
+a:link, a:visited{
+    color:#ace0f9;
+    text-decoration: underline;
+}
+
+.overlay {
+    background: linear-gradient(180deg,rgb(20, 20, 20), rgba(68, 56, 56, 0.5));
+    bottom: 100%;
+}
+
+.container:hover .overlay, .container:active .overlay {
+    height:100%;
+    border-radius: 20px;
+    bottom:0;
+}
+
+.text {
+    width: fit-content;
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .text{
+        line-height: 2rem;
+    }
+}
