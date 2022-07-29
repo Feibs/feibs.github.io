@@ -3,7 +3,7 @@ body{
 }
 
 .content{
-    padding: 4rem 0 4rem 0;
+    padding: 5rem 0 5rem 0;
 }
 
 #home{
@@ -108,6 +108,7 @@ body{
 
 .dropdown-item{
     font-size: 1rem;
+    text-align: center;
 }
 
 .dropdown-item:hover{
@@ -217,6 +218,7 @@ a:link, a:visited {
 
 .contact-via:hover .contact-link{
     text-decoration: #74BDCB underline;
+    font-style: italic;
 }
 
 footer{
@@ -250,11 +252,10 @@ footer{
         font-size: 1.5rem;
     }
     .navbar-light .navbar-nav .nav-link{
-        padding: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .dropdown-item{
-        font-size: 1.25rem;
+        font-size: 1rem;
     } 
     .project-type{
         width: 15rem;
@@ -266,6 +267,13 @@ footer{
     .greeting-desc{
         padding: 4rem 2rem 4rem 2rem;
     }
+    .navbar-light .navbar-nav .nav-link{
+        padding-top: 0.5rem; 
+        padding-bottom: 0.5rem; 
+    }
+    .dropdown-item{
+        text-align: left;
+    } 
     .project-type{
         width: 20rem;
         height: 20rem;

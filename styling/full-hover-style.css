@@ -2,7 +2,7 @@ body{
     line-height: 1.75rem;
 }
 
-a:link, a:visited{
+.news-link:link, .news-link:visited{
     color:#ace0f9;
     text-decoration: underline;
 }

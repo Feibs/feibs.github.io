@@ -22,3 +22,35 @@ body{
     background-color: #add5dd;
     padding: 2rem 1rem 2rem 1rem;
 }
+
+.project-nav{
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.navbar-back{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+    padding-right: 1.5rem;
+    color: #555555;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-back:hover, .navbar-back:active{
+    color: #555555;
+    text-decoration: #74BDCB underline;
+    font-style: italic;
+}
+
+.back-icon{
+    width: 2em;
+    padding: 1rem;
+}

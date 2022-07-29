@@ -2,6 +2,8 @@
     background: linear-gradient(180deg, #add5dd 0%, rgba(255, 241, 235, 0.45) 33.09%);
     display: flex;
     flex-wrap: wrap;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .column{
